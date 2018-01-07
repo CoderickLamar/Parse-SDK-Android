@@ -2570,9 +2570,9 @@ public class ParseObject implements Parcelable {
         final Set<ParseObject> nextBatch = new HashSet<>();
         for (ParseObject obj : remaining.get()) {
           if (obj.canBeSerialized()) {
-            current.add(obj);
+//            current.add(obj);
           } else {
-            nextBatch.add(obj);
+//            nextBatch.add(obj);
           }
         }
         remaining.set(nextBatch);
