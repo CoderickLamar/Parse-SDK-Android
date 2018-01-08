@@ -1739,9 +1739,9 @@ public class ParseObject implements Parcelable {
         // Ensure local ids are retained before saveEventually-ing children
         command.retainLocalIds();
 
-        for (ParseObject object : unsavedChildren) {
-          object.saveEventually();
-        }
+//        for (ParseObject object : unsavedChildren) {
+//          object.saveEventually();
+//        }
       } catch (ParseException exception) {
         throw new IllegalStateException("Unable to saveEventually.", exception);
       }
