@@ -2559,7 +2559,7 @@ public class ParseObject implements Parcelable {
     Task<Void> objectsTask = Task.forResult(null).continueWhile(new Callable<Boolean>() {
       @Override
       public Boolean call() throws Exception {
-        return remaining.get().size() > 0;
+        return false;
       }
     }, new Continuation<Void, Task<Void>>() {
       @Override
