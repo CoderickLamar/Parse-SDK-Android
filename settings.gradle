@@ -1,2 +1,2 @@
-include ':Parse'
+include ':parse', ':fcm', ':gcm', ':ktx'
 
