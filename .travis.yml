@@ -19,17 +19,8 @@ script:
 after_success:
   - ./gradlew coveralls
   - codecov
-  - ./scripts/publish_snapshot.sh
 
 cache:
   directories:
     - $HOME/.gradle
     - $HOME/.m2/repository
-
-deploy:
-  provider: script
-  script: ./gradlew bintrayUpload
-  skip_cleanup: true
-  on:
-    branch: master
-    tags: true
